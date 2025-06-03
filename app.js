@@ -53,7 +53,7 @@ async function main() {
     const UUID = await getVariableValue('UUID', '629148ce-6ee1-4db9-a0af-4b06b740f91f'); // 为保证安全隐蔽，建议留空，可在Node.js界面下的环境变量添加处（Environment variables）,点击ADD VARIABLE，修改变量
     console.log('你的UUID:', UUID);
 
-    const PORT = await getVariableValue('PORT', '10090');// 为保证安全隐蔽，建议留空，可在Node.js界面下的环境变量添加处（Environment variables）,点击ADD VARIABLE，修改变量
+    const PORT = await getVariableValue('PORT', '');// 为保证安全隐蔽，建议留空，可在Node.js界面下的环境变量添加处（Environment variables）,点击ADD VARIABLE，修改变量
     console.log('你的端口:', PORT);
 
     const DOMAIN = await getVariableValue('DOMAIN', 'cf-tast-choreo.bsapp.ggff.net');// 为保证安全隐蔽，建议留空，可在Node.js界面下的环境变量添加处（Environment variables）,点击ADD VARIABLE，修改变量
